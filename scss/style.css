@@ -1,29 +1,26 @@
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
 body {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  background-color: #FFC300;
   font-family: Trebuchet MS, Arial, sans-serif;
   margin: auto;
   line-height: 1;
-  image-orientation: 90deg;
-}
-
-.header box {
-  background-color: #FFC300;
-  border-bottom: 50px;
 }
 
 img {
-  border-radius: 50%;
-  display: block;
-  margin-left: auto;
-  max-width: 75%;
-  height: auto;
+  border-radius: 25 50 black;
 }
 
 a {
@@ -31,11 +28,15 @@ a {
 }
 
 .hero div {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  background-color: #000814;
-  color: beige;
-  flex-wrap: wrap;
-  align-content: space-around;
+  height: 10;
+  width: 10;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
 }
 
 .m-1 {
@@ -117,5 +118,4 @@ a {
 .py-5 {
   padding: 5rem 0;
 }
-
 /*# sourceMappingURL=style.css.map */

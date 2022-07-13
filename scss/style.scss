@@ -1,3 +1,5 @@
+@import "config";
+
 
 * {
   box-sizing: border-box;
@@ -6,13 +8,29 @@
 }
 
 body {
-  background-color: $light-color;
+  display: flex;
+  flex-direction: row;
+  // background-color: $light-color;
   font-family: $font-stack;
+  margin: auto;
   line-height: 1;
+  image-orientation: 90deg;
+}
+
+.header {
+  box {
+  background-color: $light-color;
+  border-bottom: 50px;
+}
 }
 
 img {
   border-radius: 50%;
+  display: block;
+  margin-left: auto;
+
+  max-width: 75%;
+  height: auto;
 }
 
 a {
@@ -20,15 +38,19 @@ a {
 }
 
 .hero {
-  // This is where the bulk of the SCSS styling needs to be done
+  div {
+    display: flex;
+    background-color: $primary-color;
+    color: beige;
+    flex-wrap: wrap;
+    align-content:space-around;
+  }
+}
 
-  // Take a look at the other files we've built already. How can they be useful here?
-
-  // Also, take time to review the features of SCSS we've already covered:
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
   // 3. At-Rules
-}
+
 
 // This code is related to some of the aspects of SCSS we have yet to cover.
 // While you don't have to mess with it, it would be advisable to attempt to understand its functionality.
