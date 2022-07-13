@@ -6,16 +6,8 @@
 
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   font-family: Trebuchet MS, Arial, sans-serif;
-  margin: auto;
-  line-height: 1;
-  image-orientation: 90deg;
-}
-
-.header box {
-  background-color: #FFC300;
-  border-bottom: 50px;
 }
 
 img {
@@ -24,18 +16,32 @@ img {
   margin-left: auto;
   max-width: 75%;
   height: auto;
+  border-bottom: #000814;
+}
+
+div {
+  background-color: #000814;
 }
 
 a {
   text-decoration: none;
 }
 
-.hero div {
-  display: flex;
+.hero {
   background-color: #000814;
   color: beige;
-  flex-wrap: wrap;
-  align-content: space-around;
+  border-bottom: 75px solid #FFC300;
+}
+.hero nav {
+  display: inline-flex;
+  border: 20px solid white;
+  background-color: #FFC300;
+}
+.hero-ul {
+  height: 50px;
+}
+.hero-ul-li {
+  display: inline-flex;
 }
 
 .m-1 {
