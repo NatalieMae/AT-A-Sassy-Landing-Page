@@ -25,8 +25,12 @@ div {
   background-color: #000814;
 }
 
-a {
+a a {
+  background-color: red;
+  color: white;
+  padding: 1em 1.5em;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
 .hero {
@@ -38,15 +42,13 @@ a {
   display: flex;
   flex-direction: row;
   height: 50px;
-  line-height: 50px;
+  line-height: -80px;
   background-color: #FFC300;
 }
 .hero nav ul {
   display: inline-flex;
-  flex-direction: row-reverse;
-}
-.hero nav ul li {
-  background-color: aliceblue;
+  flex-direction: row-reverse wrap;
+  flex-flow: row;
 }
 
 .m-1 {

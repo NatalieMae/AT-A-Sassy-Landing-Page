@@ -30,9 +30,13 @@ div {
 }
 
 a {
-  
-  text-decoration: none;
-  
+  a {
+    background-color: red;
+    color: white;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
 
 .hero {
@@ -46,19 +50,24 @@ a {
       display: flex;
       flex-direction: row;
       height: 50px;
-      line-height: 50px;
+      line-height: -80px;
       background-color: $light-color;
 
       & ul {
         display: inline-flex;
-        flex-direction: row-reverse;
+        flex-direction: row-reverse wrap ;
+        flex-flow: row;
         // height: 100px;
         // line-height: 50px;
-          & li {
-            background-color: aliceblue;
-      }}
+      //     & li {
+      //       // display:;
+      //       background-color: aliceblue;
+      //       box-sizing: content-box;
+      // 
+    }
   }
 }
+
 
   // 1. $variables
   // 2. nesting (dont forget about the ampersand (&) parent selector!)
@@ -82,5 +91,4 @@ $spaceamounts: (1,2,3,4,5);
   }
   .py-#{$space} {
     padding: #{$space}rem 0;
-  }
-}
+  }}
