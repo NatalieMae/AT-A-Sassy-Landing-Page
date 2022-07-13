@@ -8,6 +8,7 @@ body {
   display: flex;
   flex-direction: column;
   font-family: Trebuchet MS, Arial, sans-serif;
+  image-orientation: 90deg;
 }
 
 img {
@@ -16,7 +17,8 @@ img {
   margin-left: auto;
   max-width: 75%;
   height: auto;
-  border-bottom: #000814;
+  border-bottom: 10px solid #000814;
+  border-right: 10px solid #000814;
 }
 
 div {
@@ -33,15 +35,18 @@ a {
   border-bottom: 75px solid #FFC300;
 }
 .hero nav {
-  display: inline-flex;
-  border: 20px solid white;
+  display: flex;
+  flex-direction: row;
+  height: 50px;
+  line-height: 50px;
   background-color: #FFC300;
 }
-.hero-ul {
-  height: 50px;
-}
-.hero-ul-li {
+.hero nav ul {
   display: inline-flex;
+  flex-direction: row-reverse;
+}
+.hero nav ul li {
+  background-color: aliceblue;
 }
 
 .m-1 {

@@ -12,9 +12,7 @@ body {
   flex-direction: column;
   // background-color: $light-color;
   font-family: $font-stack;
-  // margin: auto;
-  // line-height: 1;
-  // image-orientation: 90deg;
+  image-orientation: 90deg;
 }
 
 img {
@@ -23,7 +21,8 @@ img {
   margin-left: auto;
   max-width: 75%;
   height: auto;
-  border-bottom: $primary-color;
+  border-bottom: 10px solid $primary-color;
+  border-right: 10px solid $primary-color;
 }
 
 div {
@@ -31,6 +30,7 @@ div {
 }
 
 a {
+  
   text-decoration: none;
   
 }
@@ -43,28 +43,20 @@ a {
     border-bottom: 75px solid $light-color;
 
     nav {
-      display: inline-flex;
-      border: 20px solid white;
-      // height: 50px;
-      // line-height: 50px;
-      background-color: $light-color;
-    }  
-      &-ul {
-      // display:grid;
-      // grid-template-rows: auto;
+      display: flex;
+      flex-direction: row;
       height: 50px;
-      // line-height: 50px;
-        &-li {
-        display: inline-flex;
-        // grid-template-rows: auto;
-        // height: 50px;
-        // line-height: 50px;
-      }
-      // display: block;
-      // list-style: none;
-      // padding: 0;
-      // margin: 0;
+      line-height: 50px;
+      background-color: $light-color;
 
+      & ul {
+        display: inline-flex;
+        flex-direction: row-reverse;
+        // height: 100px;
+        // line-height: 50px;
+          & li {
+            background-color: aliceblue;
+      }}
   }
 }
 
